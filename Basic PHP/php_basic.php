@@ -20,7 +20,7 @@ function luasPersegi(int $angka){
     return $panjang * $lebar;
 }
 
-function getNumber(int $angka){
+function getNum(int $angka){
     if ($angka % 3 == 0 && $angka % 5 == 0){
         return luasPersegi($angka);
     }
@@ -34,7 +34,7 @@ function getNumber(int $angka){
 }
 
 for ($i = 1; $i <= 100; $i++){
-    $number = getNumber($i);
+    $number = getNum($i);
     $formattedNumber = number_format($number, 2, '.', '');
     echo $formattedNumber . "\n";
 }
